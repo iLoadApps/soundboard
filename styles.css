@@ -1,0 +1,61 @@
+body {
+    background-image: url('https://i.imgur.com/iop1cJK.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Zet de hoofdas naar de verticale richting */
+    align-items: stretch; /* Zorg ervoor dat de items de volledige breedte van de container innemen */
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    color: #fff; /* Tekstkleur wit */
+    font-size: 24px; /* Lettergrootte aanpassen */
+    margin-top: 50px; /* Ruimte aan de bovenkant van de titel toevoegen */
+    line-height: 1; /* Lijnhoogte instellen op 1 om de tekst verticaal te centreren */
+}
+
+.soundboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0; /* Voeg wat ruimte toe aan de bovenkant */
+}
+
+.sound {
+    padding: 20px;
+    margin-right: 10px; /* Voeg een rechtermarge toe */
+    background-color: rgba(255, 255, 255, 0.7); /* Achtergrondkleur met transparantie */
+    color: #000; /* Tekstkleur zwart */
+    text-align: center;
+    cursor: pointer;
+    /* Maak elke geluidsknop een blokelement */
+    display: flex; /* Flex container */
+    align-items: center; /* Verticaal centreren */
+    justify-content: center; /* Horizontaal centreren */
+    flex: 1; /* Laat elke geluidsknop het beschikbare ruimte innemen */
+    height: 100px; /* Hoogte van elke knop */
+    width: 100px; /* Breedte van elke knop */
+    box-sizing: border-box; /* Zorg ervoor dat padding wordt meegenomen in breedte en hoogte */
+    border-radius: 20px; /* Afgeronde hoeken */
+    transition: all 0.3s ease; /* Vloeiende overgang voor alle eigenschappen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw toevoegen */
+    font-size: 24px; /* Lettergrootte aanpassen */
+    line-height: 1.5; /* Lijnhoogte instellen voor verticale uitlijning */
+    user-select: none; /* Voorkom selectie van tekst */
+}
+
+.sound:hover {
+    transform: translateY(-3px); /* Knop omhoog bewegen op hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Schaduw vergroten op hover */
+}
+
+.sound:active {
+    transform: scale(0.95); /* Verklein de knop tijdelijk bij klikken */
+}
+
+.sound:last-child {
+    margin-right: 0; /* Verwijder de rechtermarge van de laatste geluidsknop */
+}
+
