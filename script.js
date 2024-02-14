@@ -8,3 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var bgVideo = document.getElementById('bgVideo');
+    bgVideo.setAttribute('playsinline', '');
+    bgVideo.removeAttribute('controls');
+});

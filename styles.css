@@ -1,12 +1,21 @@
 body {
-    background-image: url('https://i.imgur.com/iop1cJK.jpeg');
-    background-size: cover;
-    background-position: center;
     display: flex;
-    flex-direction: column; /* Zet de hoofdas naar de verticale richting */
-    align-items: stretch; /* Zorg ervoor dat de items de volledige breedte van de container innemen */
+    flex-direction: column;
+    align-items: stretch;
     height: 100vh;
     margin: 0;
+}
+
+video#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: brightness(0.44); /* Pas de helderheid aan */
 }
 
 .title {
